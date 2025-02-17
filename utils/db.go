@@ -11,6 +11,7 @@ import (
 var DB *gorm.DB
 
 func InitDB() {
+	// Sesuaikan dengan database di local kalian
 	dsn := "host=localhost user=ruangguru password='' dbname=todo_app port=5432 sslmode=disable"
 
 	db, err := gorm.Open(postgres.Open(dsn), &gorm.Config{})
